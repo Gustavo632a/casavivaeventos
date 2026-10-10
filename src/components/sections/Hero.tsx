@@ -1,0 +1,6 @@
+import { ArrowDown, MapPin } from 'lucide-react';
+import { Button } from '../ui/Button';
+import { site } from '../../config/site';
+import { whatsappUrl } from '../../lib/whatsapp';
+import styles from './Sections.module.css';
+export function Hero(){return <section id="inicio" className={styles.hero}><div className={styles.heroText}><span className="eyebrow">CASA VIVA • RECIFE</span><h1>Momentos especiais merecem um lugar <em>inesquecível.</em></h1><p>Um espaço acolhedor para celebrar encontros, histórias e ocasiões que merecem ser lembradas.</p><div className={styles.heroActions}><Button href={whatsappUrl(site.messages.availability)} external>Consultar disponibilidade</Button><a href="#espaco" className={styles.textLink}>Conhecer o espaço <ArrowDown size={16}/></a></div><span className={styles.heroLocation}><MapPin size={14}/> Parnamirim • Recife/PE</span></div><div className={styles.heroVisual}><div className={styles.arch}><div className={styles.archInner}><span>Casa<br/><em>Viva</em></span><small>UM ESPAÇO PARA<br/>CELEBRAR HISTÓRIAS</small></div></div><span className={styles.heroCaption}>Encontros. Afeto. Boas lembranças.</span><span className={styles.visualNote}>Fotografias oficiais em breve</span></div><a href="#eventos" className={styles.scrollHint}><span>O SEU PRÓXIMO CAPÍTULO</span><ArrowDown size={17}/></a></section>;}
